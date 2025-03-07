@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wireframe | Корзина покупателя</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header__logo">
+      <img src="img/logo.webp" alt="Логотип Counter-Strike 2" />
+      <span class="header__tagline">Counter-Strike 2 </span>
+    </div>
+    <nav class="header__menu">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О компании</a>
+      <a href="market.html">Корзина</a>
+    </nav>
+    <button id="themeToggle" class="header__login-btn">Сменить тему</button>
+    <button class="header__login-btn">Войти</button>
+  </header>
+
+
+  <main class="cart">
+    <h1>Ваша корзина</h1>
+    <section class="cart__list">
+
+      <article class="cart__item">
+        <h1>1.</h1>
+        <img src="img/products/1.jpeg" alt="ESL Katowice 2014 Capsule" />
+        <div class="cart__item-info">
+          <h2>ESL Katowice 2014 Capsule</h2>
+          <p>Стоимость: 21000 евро</p>
+          <p>Количество: 2</p>
+          <p>Итого: 42000 евро</p>
+        </div>
+      </article>
+
+      <article class="cart__item">
+        <h1>2.</h1>
+        <img src="img/products/2.jpg" alt="AWP Dragon Lore" />
+        <div class="cart__item-info">
+          <h2>AWP Dragon Lore</h2>
+          <p>Стоимость: 250000 евро</p>
+          <p>Количество: 1</p>
+          <p>Итого: 250000 евро</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="cart__summary">
+      <span class="cart__total">Общая сумма: 292000 евро</span></p>
+      <button class="cart__checkout-btn">Оформить заказ</button>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="footer__menu">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О компании</a>
+      <a href="cart.html">Корзина</a>
+    </nav>
+    <ul class="footer__social">
+      <li>
+        <a href="https://x.com/counterstrike?mx=2" class="footer__link">
+          <img src="img/socials/x.png" alt="TwitterX link">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/csgo_dev/" class="footer__link">
+          <img src="img/socials/instagram.png" alt="Instagram link">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.counter-strike.net/cs2" class="footer__link">
+          <img src="img/socials/facebook.png" alt="Facebook link">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@Valve" class="footer__link">
+          <img src="img/socials/youtube.webp" alt="YouTube link">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/button.js" defer></script>
+</body>
+</html>
