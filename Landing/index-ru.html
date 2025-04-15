@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автошкола TeeMeister</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+    body {background: #fff; color: #000; line-height: 1.6;}
+    header {background: #d40000; color: white; padding: 10px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
+    header img {height: 40px;}
+    header .contact {text-align: right;}
+    .hero img {width: 100%; height: auto;}
+    .stats {display: flex; flex-wrap: wrap; justify-content: space-around; background: #f3f3f3; padding: 20px 0; text-align: center;}
+    .stats div {flex: 1 1 150px; margin: 10px;}
+    .stats h3 {color: red;}
+    .offers, .categories, .team, .cars, .footer {padding: 40px 20px; text-align: center;}
+    .offers .card, .categories .card, .team .person, .cars .car {margin: 10px; display: inline-block; vertical-align: top;}
+    .offers .card, .categories .card {width: 250px; border: 1px solid #ccc; padding: 15px; border-radius: 10px; background: #fff;}
+    .team .person img, .cars .car img {width: 100px; height: auto; border-radius: 50%;}
+    .team .person, .cars .car {width: 200px; display: inline-block; vertical-align: top; margin: 15px;}
+    .footer {background: #d40000; color: white;}
+    .why {display: flex; flex-wrap: wrap; justify-content: space-around; padding: 30px; background: #f9f9f9;}
+    .why div {text-align: center; flex: 1 1 150px; max-width: 200px; margin: 10px;}
+    .button {margin-top: 10px; display: inline-block; padding: 10px 20px; background: #d40000; color: white; text-decoration: none; border-radius: 5px;}
+
+    @media (max-width: 768px) {
+      header {flex-direction: column; text-align: center;}
+      header .contact {text-align: center; margin-top: 10px;}
+      .offers .card, .categories .card, .team .person, .cars .car {width: 90%; max-width: 300px;}
+      .why {flex-direction: column; align-items: center;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="landmaterials/logo.PNG" alt="Логотип TeeMeister">
+    </div>
+    <div class="contact">
+      <p>+372 5884 2234</p>
+      <p>info@teemeister.ee</p>
+      <button onclick="window.location.href='index.html'">Eesti</button>
+      <button onclick="window.location.href='index-ru.html'">Русский</button>
+    </div>
+  </header>
+  <section class="hero">
+  </section>
+  <section class="stats">
+    <div><h3>50</h3><p>50 лет обучаем водителей в Эстонии</p></div>
+    <div><h3>43275</h3><p>Успешно окончили автошколу</p></div>
+    <div><h3>15</h3><p>Разные учебные программы</p></div>
+  </section>
+  <section class="offers">
+    <h2>B-КАТЕГОРИЯ 10.03.2025</h2>
+    <img src="landmaterials/2.PNG" alt="B-KATEGOORIA">
+    <div class="card">
+      <h3>Предложение 1</h3>
+      <p>Приходи учиться с друзьями и получай скидки!</p>
+    </div>
+    <div class="card">
+      <h4>Предложение 2</h4>
+      <p1>Заплати всю сумму сразу и получи бонусный урок вождения!</p1>
+    </div>
+  </section>
+  <section class="categories">
+    <h2>Запишись на курсы вождения</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="landmaterials/B-KATEGOORIA.PNG" alt="B-КАТЕГОРИЯ">
+        <p>B-КАТЕГОРИЯ</p>
+      </div>
+      <div class="card">
+        <img src="landmaterials/Talvine sõit.PNG" alt="Зимняя езда">
+        <p>Зимняя езда</p>
+      </div>
+      <div class="card">
+        <img src="landmaterials/C-KATEGOORIA.PNG" alt="C-КАТЕГОРИЯ">
+        <p>C-КАТЕГОРИЯ</p>
+      </div>
+      <div class="card">
+        <img src="landmaterials/CE-KATEGOORIA.PNG" alt="CE-КАТЕГОРИЯ">
+        <p>CE-КАТЕГОРИЯ</p>
+      </div>
+      <div class="card">
+        <img src="landmaterials/D-KATEGOORIA.PNG" alt="D-КАТЕГОРИЯ">
+        <p>D-КАТЕГОРИЯ</p>
+      </div>
+      <div class="card">
+        <img src="landmaterials/T-KATEGOORIA.PNG" alt="T-КАТЕГОРИЯ">
+        <p>T-КАТЕГОРИЯ</p>
+      </div>
+    </div>
+  </section>
+  <style>
+    .categories {
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      justify-items: center;
+    }
+    
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      width: 100%;
+      max-width: 250px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    
+    .card p {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+    </style>  
+  <section class="why">
+    <div><p>Сотрудничество с Кассой по безработице</p></div>
+    <div><p>Онлайн-тесты и материалы</p></div>
+    <div><p>Очное / дистанционное обучение</p></div>
+    <div><p>Автошкола в центре города</p></div>
+  </section>
+  <section class="team">
+    <h2>Наша команда</h2>
+    <div class="person"><img src="landmaterials/Direktor.PNG" alt><p>Директор</p></div>
+    <div class="person"><img src="landmaterials/Manager.PNG" alt><p>Менеджер</p></div>
+    <div class="person"><img src="landmaterials/Reklaami spetsialist.PNG" alt><p>Секретарь</p></div>
+    <div class="person"><img src="landmaterials/Sekretär.PNG" alt><p>Специалист по рекламе</p></div>
+    <div class="person"><img src="landmaterials/Teooriaõpetaja.PNG" alt><p>Преподаватель теории</p></div>
+  </section>
+  <section class="cars">
+    <h2>Наши автомобили</h2>
+    <div class="car"><img src="landmaterials/golf.PNG" alt><p>Volkswagen Golf (механическая коробка передач)</p></div>
+    <div class="car"><img src="landmaterials/kiaceed.PNG" alt><p>Kia Ceed (механическая коробка передач)</p></div>
+    <div class="car"><img src="landmaterials/kiaceed2.PNG" alt><p>Kia Ceed (автоматическая коробка передач)</p></div>
+  </section>
+  <footer class="footer">
+    <p>Teemeister MTÜ<br>Рег. код 80050532<br>Тел. 58842234<br>info@teemeister.ee</p>
+  </footer>
+</body>
+</html>
